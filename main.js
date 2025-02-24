@@ -22,6 +22,9 @@ function operate(a, op, b) {
 }
 
 function populateDisplay(button) {
+  // disables the "." button if the user already typed "."
+  if (button === '.' && display.textContent.includes('.'))
+    return;
   displayText(a);
   if (firstOperand) {
     if (button === '.' || !isNaN(button)) { // number
