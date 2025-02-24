@@ -49,7 +49,7 @@ function populateDisplay(button) {
   }
 }
 
-function equal() {
+function equal() {  // when "=" is pressed
   if (!firstOperand) {
     a = operate(a, op, b);
     displayText(a);
